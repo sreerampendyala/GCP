@@ -1,0 +1,17 @@
+[
+    {
+        "name": "id",
+        "type": "STRING",
+        "description":"id of the care plan"
+    },
+    {
+        "name": "status",
+        "type": "STRING",
+        "description":"status of plan"
+    },
+    {
+        "name": "intent",
+        "type": "STRING",
+        "description":"intent of plan"
+    }
+]

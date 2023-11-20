@@ -1,0 +1,14 @@
+gcloud auth application-default login
+
+gcloud auth application-default set-quota-project soy-alchemy-404117
+
+pip install apache-beam[gcp]
+
+python main.py batchpipeline \
+    --runner DataflowRunner \
+    --project soy-alchemy-404117\
+    --staging_location gs://dataflow-staging-us-central1-6b0f485e9ea7c91787cb052229d7ee62 \
+    --temp_location gs://dataflow-staging-us-central1-6b0f485e9ea7c91787cb052229d7ee62 \
+    --region us-central1 \
+    --setup_file ./setup.py \
+    --save_main_session
