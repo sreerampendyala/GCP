@@ -1,1 +1,6 @@
+# Ignore pycache
+**__**__/ 
+
+# Ignore GCP.egg-info
+GCP.egg-info/
 
